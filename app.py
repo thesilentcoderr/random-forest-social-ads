@@ -14,7 +14,7 @@ from sklearn.preprocessing import LabelEncoder
 labelencoder_X = LabelEncoder()
 X[:, 0] = labelencoder_X.fit_transform(X[:, 0])
 def predict_note_authentication(UserID, Gender,Age,EstimatedSalary):
-  output= model.predict(sc.transform(([Age,EstimatedSalary]])))
+  output= model.predict(sc.transform(([[Age,EstimatedSalary]])))
   print("Purchased", output)
   if output==[1]:
     prediction="Item will be purchased"
